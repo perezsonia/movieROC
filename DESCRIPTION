@@ -1,0 +1,23 @@
+Package: movieROC
+Type: Package
+Title: Visualization for Classification Regions for ROC Curve Generalization
+Version: 0.1.0
+Author: Sonia Perez Fernandez
+Maintainer: Sonia Perez Fernandez <perezsonia@uniovi.es>
+Description: Tools for estimating the Receiver Operating Characteristic (ROC) curve under different generalizations:
+              - making the classification subsets flexible to cover those scenarios where both extremes of the marker 
+              are associated with a higher risk of being positive, considering two thresholds (gROC curve);
+              - transforming the marker by a function either defined by the user or resulting from a logistic regression
+              model (hROC curve);
+              - considering a linear transformation with some fixed parameters introduced by the user, dynamic parameters
+              resulting from Meisner et al. (2017) approach or empirically maximizing TPR for each FPR for a bivariate marker.
+              Also a quadratic transformation with particular coefficients or a function fitted by a logistic regression model
+              can be considered (biROC curve);
+              - considering a linear transformation with some fixed parameters introduced by the user, dynamic parameters
+              resulting from Meisner et al. (2017) approach or a function fitted by a logistic regression model (multiROC curve).
+              The classification regions behind each point of the ROC curve are displayed in both fixed graphics (plot.buildROC,
+              plot.regions or plot.funregions function) or videos (movieROC function).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: rms, animation
